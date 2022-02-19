@@ -13,7 +13,7 @@ const NavItemsComponent = function(){
 const NavBarComponent =function(){
     return (
         <nav>
-            <h1>Hotel 101</h1>
+            <h1>Hotel 101 </h1>
             <NavItemsComponent/>
         </nav>
     );

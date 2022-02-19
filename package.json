@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "learning react from the very basics",
   "scripts": {
-    "dist": "webpack --mode production"
+    "dist-prod": "webpack --mode production",
+    "dist": "webpack --mode development"
   },
   "repository": {
     "type": "git",
