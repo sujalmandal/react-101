@@ -11,6 +11,16 @@
     </head>
     <body>
         <div id="root"></div>
-        <script src="index.js" type="text/babel"></script>
-    </body>
+        <!--
+            <script src="index.js" type="text/babel"></script>
+        -->
+        <script>
+            var rootElem = document.getElementById("root");
+            var contentElement = document.createElement("h1");
+            rootElem.append(contentElement);
+            contentElement.setAttribute("class","header");
+            contentElement.textContent = "Component equivalent with vanilla js";
+            
+        </script>
+        </body>
 </html>
