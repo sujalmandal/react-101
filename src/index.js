@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const NavItemsComponent = function(){
     return (
     <ul>
@@ -16,16 +19,11 @@ const NavBarComponent =function(){
     );
 };
 
-//jsx element descriptor that can be rendered directly
-const pageJSXObject = <div>
+ReactDOM.render(
+    <div>
     <NavBarComponent/>
     <p>Copyright 2100 (c)</p>
-    </div>;
-
-console.log(pageJSXObject);
-
-ReactDOM.render(
-    pageJSXObject,
+    </div>,
     //selector
     document.getElementById("root")
 );
