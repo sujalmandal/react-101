@@ -19,6 +19,7 @@ const NavBarComponent =function(){
     );
 };
 
+/*
 ReactDOM.render(
     <div>
     <NavBarComponent/>
@@ -27,3 +28,9 @@ ReactDOM.render(
     //selector
     document.getElementById("root")
 );
+*/
+
+const jsxElemDescriptor = <div>hello cruel world</div>;
+console.log(jsxElemDescriptor);
+const rootElem = document.getElementById("root");
+rootElem.append(jsxElemDescriptor);
