@@ -1,46 +1,15 @@
-import React from 'react';
 import ReactDOM from 'react-dom';
+import React from 'react';
 
-const NavItemsComponent = function(){
-    return (
-    <ul className ="nav-list-items">
-        <li>Pricing</li>
-        <li>Contact</li>
-        <li>About Us</li>
-    </ul>);
-}
-
-const NavBarComponent = function(){
-    return (
-        <header>
-            <nav className="nav">
-                <NavItemsComponent/>
-            </nav>
-        </header>
-    );
-};
-
-const MainComponent = function(){
-    return (
-        <div>
-            <h1>Hello, world.</h1>
-        </div>
-    );
-}
-
-const FooterComponent = function(){
-    return (
-        <footer className="footer">
-            <small>© Sujal Mandal - 2022 </small>
-        </footer>
-    );
-}
+import { MainComponent } from './components/MainComponent';
+import { FooterComponent } from './components/FooterComponent';
+import { HeaderComponent } from './components/HeaderComponent';
 
 const rootElem = document.getElementById("root");
 
 ReactDOM.render(
     <div>
-    <NavBarComponent/>
+    <HeaderComponent/>
     <MainComponent/>
     <FooterComponent/>
     </div>,
