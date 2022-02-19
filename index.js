@@ -1,16 +1,31 @@
-const jsxElement = <div className = "header">Hi there</div>
-//javascript object that describes a DOM element - not the element itself!
-console.log(jsxElement);
+const NavItemsComponent = function(){
+    return (
+    <ul>
+        <li>Pricing</li>
+        <li>Contact</li>
+        <li>About Us</li>
+    </ul>);
+}
 
-const jsElement = document.createElement("div");
-jsElement.className = "header";
+const NavBarComponent =function(){
+    return (
+        <nav>
+            <h1>Hotel 101</h1>
+            <NavItemsComponent/>
+        </nav>
+    );
+};
 
-//a javascript DOM element
-console.log(jsElement);
+//jsx element descriptor that can be rendered directly
+const pageJSXObject = <div>
+    <NavBarComponent/>
+    <p>Copyright 2100 (c)</p>
+    </div>;
+
+console.log(pageJSXObject);
 
 ReactDOM.render(
-    jsxElement
-    ,
+    pageJSXObject,
     //selector
     document.getElementById("root")
 );
